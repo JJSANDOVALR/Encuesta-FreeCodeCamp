@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="encuesta.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <header class="header">
+    <h1 id="title">
+      Encuesta Proyecto FreeCodeCamp
+    </h1>
+    <p id="description"><em>Gracias por tomarte el tiempo de contestar esta encuesta</em></p>
+    </header>
+    <form id="survey-form">
+      <div class="group">
+      <label for="name" id="name-label">Nombre:</label>
+      <input id="name" type="text" required placeholder="Ingrese su nombre" name="form">
+      </div>
+      <div class="group">
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" type="email" name="form" required placeholder="Ingrese su Email">
+      </div>
+      <div class="group">
+        <label for="number" id="number-label">Edad:</label>
+        <input type="number" name="form" id="number" required placeholder="Ingrese su edad" min="18" max="40">
+      </div>
+      <div class="group">
+        <p>¿Qué opción describe mejor su puesto actualmente?</p>
+        <select name="rol" id="dropdown" required>
+        <option disabled selected value>Selecciona un rol</option>
+        <option value="Estudiante">Estudiante</option>
+        <option value="Empleado">Empleado</option>
+        <option value="Desempleado">Desempleado</option>
+        <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+        <option value="Otro">Otro</option>
+        </select>
+      </div>
+      <div class="group">
+        <p>¿Recomendarías FreeCodeCamp a un amigo?</p>
+        <label for="definitivamente">
+          <input type="radio" id="definitivamente" value="definitivamente" name="recomendacion">Definitivamente
+        </label>
+        <label for="quiza">
+          <input type="radio" id="quiza" name="recomendacion" value="quiza">Quizá
+        </label>
+        <label for="no-secure">
+          <input type="radio" value="no-estoy-seguro" id="no-secure" name="recomendacion">No estoy seguro
+        </label>
+      </div>
+      <div class="group">
+        <p>¿Cuál es tu característica favorita de FreeCodeCamp?</p>
+        <select name="caracteristica" id="features" required>
+          <option disable selected value>Selecciona una característica</option>
+          <option value="retos">Ejercicios</option>
+          <option value="proyectos">Proyectos</option>
+          <option value="comunidad">Comunidad</option>
+          <option value="gratuito">Gratuidad</option>
+        </select>
+      </div>
+      <div class="group">
+        <p>¿Qué te gustaría que mejoráramos?</p>
+        <label for="feproyects">
+          <input type="checkbox" id="feproyects" value="front-end projects" name="improve">Proyectos Front-end
+        </label>
+        <label for="beproyects">
+          <input type="checkbox" id="beproyects" value="back-end projects" name="improve">Proyectos Back-end
+        </label>
+        <label for="visuadata">
+          <input type="checkbox" id="visuadata" value="visualizacion de datos" name="improve">Visualización de datos
+        </label>
+        <label for="desafios">
+          <input type="checkbox" id="desafios" value="desafios" name="improve">Desafíos
+        </label>
+        <label for="cca">
+          <input type="checkbox" id="cca" value="comunidad codigo abierto" name="improve">Comunidad de Código Abierto
+        </label>
+        <label for="gitterh">
+          <input type="checkbox" id="gitterh" value="cuartos de apoyo de git" name="improve">Cuartos de Apoyo de Git
+        </label>
+        <label for="foro">
+          <input type="checkbox" id="foro" value="Foro" name="improve">Foro
+        </label>
+        <label for="videos">
+          <input type="checkbox" id="videos" value="videos" name="improve">Videos
+        </label>
+        <label for="addc">
+          <input type="checkbox" id="addc" value="cursos adicionales" name="improve">Cursos Adicionales
+        </label>
+      </div>
+      <div class="group">
+        <p>¿Algún comentario o sugerencia?</p>
+        <textarea name="comment" id="comment" placeholder="Escribe tu comentario acá..."></textarea>
+      </div>
+      <div class="group">
+        <button type="submit" id="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
